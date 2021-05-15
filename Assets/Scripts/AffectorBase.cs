@@ -22,6 +22,11 @@ public class AffectorBase : MonoBehaviour
 
     void Start()
     {
+        Setgoals();
+    }
+
+    public void Setgoals()
+    {
         goalLocations = GameObject.FindGameObjectsWithTag(goalName);
         agent = this.GetComponent<NavMeshAgent>();
         agent.SetDestination(goalLocations[Random.Range(0, goalLocations.Length)].transform.position);
@@ -30,7 +35,7 @@ public class AffectorBase : MonoBehaviour
         ResetAgent();
     }
 
-    void ResetAgent()
+    public void ResetAgent()
     {
         speedMult = Random.Range(0.5f, 1.5f);
         agent.speed = 2 * speedMult;
@@ -41,6 +46,11 @@ public class AffectorBase : MonoBehaviour
     }
     void Update()
     {
+        StopandWalk();
+    }
+
+    public void StopandWalk()
+    {
         if (agent.remainingDistance < 1)
         {
             if (waitTime <= 0)
@@ -49,14 +59,14 @@ public class AffectorBase : MonoBehaviour
                 ResetAgent();
                 agent.SetDestination(goalLocations[Random.Range(0, goalLocations.Length)].transform.position);
                 waitTime = startWaitTime;
-                
+
 
             }
             else
             {
                 anim.SetTrigger("isIdle");
                 GameObject affectLocation = Instantiate(affector, agent.transform.position, agent.transform.rotation);
-                Destroy(affectLocation,timeItLasts);
+                Destroy(affectLocation, timeItLasts);
                 waitTime -= Time.deltaTime;
             }
         }

@@ -920,7 +920,7 @@ GameObject:
   - component: {fileID: 1140482551}
   - component: {fileID: 152797872281047830}
   - component: {fileID: 1447616093}
-  - component: {fileID: 5052032119484615327}
+  - component: {fileID: -4858940647090965731}
   m_Layer: 0
   m_Name: BeardoImposter
   m_TagString: Masked
@@ -1024,7 +1024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mask: {fileID: 999932811}
---- !u!114 &5052032119484615327
+--- !u!114 &-4858940647090965731
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1033,9 +1033,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 5996026645079374402}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bf9d9583aed1224ea130143fce0ca47, type: 3}
+  m_Script: {fileID: 11500000, guid: 521a3df2ef106a3419ff6d8f3d1cf4a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goalLocations: []
+  affector: {fileID: 7421632550968968441, guid: 3a7b0107dd1df5947ad2fe76042cd230, type: 3}
+  goalName: ImpostersGoal
+  startWaitTime: 3
+  timeItLasts: 3
 --- !u!1 &6692460556562133862
 GameObject:
   m_ObjectHideFlags: 0

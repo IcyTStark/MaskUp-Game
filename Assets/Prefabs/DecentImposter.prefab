@@ -823,10 +823,9 @@ GameObject:
   - component: {fileID: 2729570645212495496}
   - component: {fileID: 1788988901}
   - component: {fileID: 1695928433}
-  - component: {fileID: 1695928434}
   - component: {fileID: 6995454001967772766}
   - component: {fileID: 828862433}
-  - component: {fileID: 3430196338677352547}
+  - component: {fileID: 1799667888408191605}
   m_Layer: 0
   m_Name: DecentImposter
   m_TagString: Masked
@@ -891,19 +890,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &1695928434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3362696500563485746}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6f2f6584a4a20f49b2935539f335973, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  goalLocations: []
 --- !u!65 &6995454001967772766
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -930,7 +916,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mask: {fileID: 1726942544}
---- !u!114 &3430196338677352547
+--- !u!114 &1799667888408191605
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -939,9 +925,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 3362696500563485746}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bf9d9583aed1224ea130143fce0ca47, type: 3}
+  m_Script: {fileID: 11500000, guid: 521a3df2ef106a3419ff6d8f3d1cf4a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goalLocations: []
+  affector: {fileID: 7421632550968968441, guid: 3a7b0107dd1df5947ad2fe76042cd230, type: 3}
+  goalName: ImpostersGoal
+  startWaitTime: 3
+  timeItLasts: 3
 --- !u!1 &3530446284189560462
 GameObject:
   m_ObjectHideFlags: 0

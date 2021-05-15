@@ -9349,10 +9349,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goalLocations: []
-  affector: {fileID: 0}
-  goalName: 
-  startWaitTime: 0
-  timeItLasts: 0
+  affector: {fileID: 7421632550968968441, guid: 3a7b0107dd1df5947ad2fe76042cd230, type: 3}
+  goalName: UnMaskedGoal
+  waitTime: 3
+  startWaitTime: 3
+  speedMult: 1
+  timeItLasts: 3
 --- !u!1001 &1535614434
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12010,10 +12012,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goalLocations: []
-  affector: {fileID: 0}
-  goalName: 
-  startWaitTime: 0
-  timeItLasts: 0
+  affector: {fileID: 7421632550968968441, guid: 3a7b0107dd1df5947ad2fe76042cd230, type: 3}
+  goalName: UnMaskedGoal
+  waitTime: 3
+  startWaitTime: 3
+  speedMult: 1
+  timeItLasts: 3
 --- !u!1001 &2042192539
 PrefabInstance:
   m_ObjectHideFlags: 0

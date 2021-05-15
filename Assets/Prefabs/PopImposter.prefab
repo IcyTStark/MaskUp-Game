@@ -693,10 +693,9 @@ GameObject:
   - component: {fileID: 4492152252509015714}
   - component: {fileID: 837307819388626897}
   - component: {fileID: 972697703}
-  - component: {fileID: 972697705}
   - component: {fileID: 8672408672485036021}
   - component: {fileID: 90021656675068860}
-  - component: {fileID: 6888685478334548189}
+  - component: {fileID: 3725884769245607760}
   m_Layer: 0
   m_Name: PopImposter
   m_TagString: UnMasked
@@ -761,19 +760,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &972697705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3827078922339947544}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6f2f6584a4a20f49b2935539f335973, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  goalLocations: []
 --- !u!65 &8672408672485036021
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -800,7 +786,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mask: {fileID: 2235002442591016042}
---- !u!114 &6888685478334548189
+--- !u!114 &3725884769245607760
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -809,9 +795,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 3827078922339947544}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bf9d9583aed1224ea130143fce0ca47, type: 3}
+  m_Script: {fileID: 11500000, guid: 521a3df2ef106a3419ff6d8f3d1cf4a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goalLocations: []
+  affector: {fileID: 7421632550968968441, guid: 3a7b0107dd1df5947ad2fe76042cd230, type: 3}
+  goalName: ImpostersGoal
+  startWaitTime: 3
+  timeItLasts: 3
 --- !u!1 &3952169590419945283
 GameObject:
   m_ObjectHideFlags: 0
