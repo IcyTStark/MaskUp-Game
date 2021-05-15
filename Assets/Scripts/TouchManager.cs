@@ -3,22 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class FleeFromLocation : MonoBehaviour
+public class TouchManager : MonoBehaviour
 {
-//    [SerializeField] GameObject spikeBoyMask;
-//    [SerializeField] GameObject popGirlMask;
-//    [SerializeField] GameObject decentManMask;
-//    [SerializeField] GameObject beardoManMask;
-    //[SerializeField] GameObject spikeBoyMouthPosition;
-    //[SerializeField] GameObject popGirlMouthPosition;
-    //GameObject[] agents;
     void Start()
     {
-        //agents = GameObject.FindGameObjectsWithTag("Masked");
-        //spikeBoyMask.SetActive(false);
-        //popGirlMask.SetActive(false);
-        //decentManMask.SetActive(false);
-        //beardoManMask.SetActive(false);
+        
     }
 
     
