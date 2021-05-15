@@ -369,36 +369,6 @@ Transform:
   m_Father: {fileID: 1898695196568983370}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1631388768622621318
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4886285932715683422}
-  m_Layer: 0
-  m_Name: mouthPosition
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4886285932715683422
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1631388768622621318}
-  m_LocalRotation: {x: 0.0000000037252899, y: -1.20947055e-14, z: 1.5879167e-14, w: 1}
-  m_LocalPosition: {x: 0, y: 0.008537315, z: 0.047813457}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 7510814898868214817}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2049784965608899656
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,7 +462,7 @@ Transform:
   m_LocalScale: {x: 0.06, y: 0.019999998, z: 0.009999999}
   m_Children: []
   m_Father: {fileID: 7510814898868214817}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5039758370038708889
 MeshFilter:
@@ -694,6 +664,7 @@ GameObject:
   - component: {fileID: 972697705}
   - component: {fileID: 8672408672485036021}
   - component: {fileID: 90021656675068860}
+  - component: {fileID: 6083171893014460743}
   m_Layer: 0
   m_Name: PopGirl
   m_TagString: UnMasked
@@ -797,6 +768,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mask: {fileID: 2235002442591016042}
+--- !u!54 &6083171893014460743
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3827078922339947544}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3952169590419945283
 GameObject:
   m_ObjectHideFlags: 0
@@ -1277,7 +1264,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4711479334208755919}
-  - {fileID: 4886285932715683422}
   - {fileID: 1565693094565644073}
   m_Father: {fileID: 7183690447925081435}
   m_RootOrder: 0

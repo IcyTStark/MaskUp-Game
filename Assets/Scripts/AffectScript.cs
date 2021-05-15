@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class AffectScript : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision other)
+    [Tooltip ("True: Masks them, False: UnMasks them")]
+    [SerializeField] bool whatToHappen;
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Masked")
         {
             Debug.Log("Im working brother");
-            other.gameObject.GetComponent<MaskStatus>().ToggleMask(false);
+            other.gameObject.GetComponent<MaskStatus>().ToggleMask(whatToHappen);
         }
     }
-    //{
-        
-    //}
+    
 }

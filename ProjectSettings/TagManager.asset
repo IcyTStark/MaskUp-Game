@@ -8,6 +8,7 @@ TagManager:
   - Masked
   - UnMasked
   - ImpostersGoal
+  - UnMaskedGoal
   layers:
   - Default
   - TransparentFX

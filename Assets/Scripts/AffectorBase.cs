@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class RascalsControl : MonoBehaviour
+public class AffectorBase : MonoBehaviour
 {
     [Header("Goal Locations")]
     [Tooltip("Points where the people should roam around")]
     [SerializeField] GameObject[] goalLocations;
     [SerializeField] GameObject affector;
+    [SerializeField] string goalName;
 
     float waitTime;
     [SerializeField] float startWaitTime;
@@ -17,12 +18,11 @@ public class RascalsControl : MonoBehaviour
     Animator anim;  //Gets their animation component
 
     float speedMult;
-    float detectionRadius = 20;
-    float fleeRadius = 10;
+    [SerializeField] float timeItLasts;
 
     void Start()
     {
-        goalLocations = GameObject.FindGameObjectsWithTag("ImpostersGoal");
+        goalLocations = GameObject.FindGameObjectsWithTag(goalName);
         agent = this.GetComponent<NavMeshAgent>();
         agent.SetDestination(goalLocations[Random.Range(0, goalLocations.Length)].transform.position);
         anim = this.GetComponent<Animator>();
@@ -56,7 +56,7 @@ public class RascalsControl : MonoBehaviour
             {
                 anim.SetTrigger("isIdle");
                 GameObject affectLocation = Instantiate(affector, agent.transform.position, agent.transform.rotation);
-                Destroy(affectLocation, 10f);
+                Destroy(affectLocation,timeItLasts);
                 waitTime -= Time.deltaTime;
             }
         }
