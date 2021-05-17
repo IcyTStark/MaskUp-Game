@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PanZoom : MonoBehaviour
 {
-#if UNITY_IOS || UNITY_ANDROID
+
     public Camera Camera;
     public bool Rotate;
     protected Plane Plane;
@@ -41,43 +41,43 @@ public class PanZoom : MonoBehaviour
         }
 
         //Pinch (Zoom Function)
-        if (Input.touchCount >= 2)
-        {
-            var pos1 = PlanePosition(Input.GetTouch(0).position);
-            var pos2 = PlanePosition(Input.GetTouch(1).position);
-            var pos1b = PlanePosition(Input.GetTouch(0).position - Input.GetTouch(0).deltaPosition);
-            var pos2b = PlanePosition(Input.GetTouch(1).position - Input.GetTouch(1).deltaPosition);
+        //if (Input.touchCount >= 2)
+        //{
+        //    var pos1 = PlanePosition(Input.GetTouch(0).position);
+        //    var pos2 = PlanePosition(Input.GetTouch(1).position);
+        //    var pos1b = PlanePosition(Input.GetTouch(0).position - Input.GetTouch(0).deltaPosition);
+        //    var pos2b = PlanePosition(Input.GetTouch(1).position - Input.GetTouch(1).deltaPosition);
 
-            //calc zoom
-            var zoom = Vector3.Distance(pos1, pos2) /
-                       Vector3.Distance(pos1b, pos2b);
+        //    //calc zoom
+        //    var zoom = Vector3.Distance(pos1, pos2) /
+        //               Vector3.Distance(pos1b, pos2b);
 
-            //edge case
-            if (zoom == 0 || zoom > 10)
-                return;
+        //    //edge case
+        //    if (zoom == 0 || zoom > 10)
+        //        return;
 
-            //Move cam amount the mid ray
-            Vector3 camPositionBeforeAdjustment = Camera.transform.position;
-            Camera.transform.position = Vector3.LerpUnclamped(pos1, Camera.transform.position, 1 / zoom);
+        //    //Move cam amount the mid ray
+        //    Vector3 camPositionBeforeAdjustment = Camera.transform.position;
+        //    Camera.transform.position = Vector3.LerpUnclamped(pos1, Camera.transform.position, 1 / zoom);
 
-            //Restricts zoom height 
+        //    //Restricts zoom height 
 
-            //Upper (ZoomOut)
-            if (Camera.transform.position.y > (cameraStartPosition.y + CameraUpperHeightBound))
-            {
-                Camera.transform.position = camPositionBeforeAdjustment;
-            }
-            //Lower (Zoom in)
-            if (Camera.transform.position.y < (cameraStartPosition.y - CameraLowerHeightBound) || Camera.transform.position.y <= 1)
-            {
-                Camera.transform.position = camPositionBeforeAdjustment;
-            }
+        //    //Upper (ZoomOut)
+        //    if (Camera.transform.position.y > (cameraStartPosition.y + CameraUpperHeightBound))
+        //    {
+        //        Camera.transform.position = camPositionBeforeAdjustment;
+        //    }
+        //    //Lower (Zoom in)
+        //    if (Camera.transform.position.y < (cameraStartPosition.y - CameraLowerHeightBound) || Camera.transform.position.y <= 1)
+        //    {
+        //        Camera.transform.position = camPositionBeforeAdjustment;
+        //    }
 
 
-            //Rotation Function
-            if (Rotate && pos2b != pos2)
-                Camera.transform.RotateAround(pos1, Plane.normal, Vector3.SignedAngle(pos2 - pos1, pos2b - pos1b, Plane.normal));
-        }
+        //    //Rotation Function
+        //    if (Rotate && pos2b != pos2)
+        //        Camera.transform.RotateAround(pos1, Plane.normal, Vector3.SignedAngle(pos2 - pos1, pos2b - pos1b, Plane.normal));
+        //}
 
     }
 
@@ -113,5 +113,5 @@ public class PanZoom : MonoBehaviour
     {
         Gizmos.DrawLine(transform.position, transform.position + transform.up);
     }
-#endif
+
 }
