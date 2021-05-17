@@ -11,5 +11,9 @@ public class ImposterAffector : MonoBehaviour
             other.GetComponent<MaskStatus>().ToggleMask(false);
             other.GetComponent<MaskStatus>().ToggleImposterMask(true);
         }
+        if(other.gameObject.tag == "UnMasked")
+        {
+            other.GetComponent<MaskStatus>().ToggleImposterMask(true);
+        }
     }
 }
