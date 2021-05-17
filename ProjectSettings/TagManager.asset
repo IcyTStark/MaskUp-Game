@@ -9,6 +9,9 @@ TagManager:
   - UnMasked
   - ImpostersGoal
   - UnMaskedGoal
+  - Imposter
+  - DoctorGoal
+  - Doctor
   layers:
   - Default
   - TransparentFX

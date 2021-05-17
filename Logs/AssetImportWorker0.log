@@ -15,11 +15,11 @@ D:/Unity Repos/Office/MaskUp
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58958
+51681
 Successfully changed project path to: D:/Unity Repos/Office/MaskUp
 D:/Unity Repos/Office/MaskUp
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 36.77 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 29.21 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.4f1 (0abb6314276a)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Resources/UnitySubsystems
@@ -35,514 +35,550 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56140
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56028
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002787 seconds.
+Registered in 0.002258 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 31.59 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 33.49 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.738 seconds
+- Completed reload, in  3.045 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000915 seconds.
+Registered in 0.000871 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.47 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.088 seconds
+- Completed reload, in  1.143 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1129 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 58.0 MB.
 System memory in use after: 58.0 MB.
 
 Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1572.
-Total: 2.471800 ms (FindLiveObjects: 0.255500 ms CreateObjectMapping: 0.101800 ms MarkObjects: 1.965500 ms  DeleteObjects: 0.147400 ms)
+Total: 2.248000 ms (FindLiveObjects: 0.244000 ms CreateObjectMapping: 0.103600 ms MarkObjects: 1.814500 ms  DeleteObjects: 0.084300 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scripts/AffectorBase.cs
-  artifactKey: Guid(5bf9d9583aed1224ea130143fce0ca47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/AffectorBase.cs using Guid(5bf9d9583aed1224ea130143fce0ca47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1320571f96686ffc35648516555ddc55') in 0.033393 seconds
-  Import took 0.035545 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 145.972292 seconds.
-  path: Assets/Scripts/AffectorBase.cs
-  artifactKey: Guid(5bf9d9583aed1224ea130143fce0ca47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/AffectorBase.cs using Guid(5bf9d9583aed1224ea130143fce0ca47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '139883f43585df935ab53ecc33cc7126') in 0.002840 seconds
-  Import took 0.005978 seconds .
+  path: Assets/Scripts/Affectors/DoctorAffector.cs
+  artifactKey: Guid(46abae1a4106c414fb70ab9efefba580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Affectors/DoctorAffector.cs using Guid(46abae1a4106c414fb70ab9efefba580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34c961f9eb2b4be8ce70e35ad8691b41') in 0.043832 seconds
+  Import took 0.045913 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001197 seconds.
+Registered in 0.000693 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.924 seconds
+- Completed reload, in  0.997 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1124 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 57.9 MB.
 System memory in use after: 58.0 MB.
 
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1575.
-Total: 1.972000 ms (FindLiveObjects: 0.211700 ms CreateObjectMapping: 0.061300 ms MarkObjects: 1.582100 ms  DeleteObjects: 0.096600 ms)
+Total: 2.132200 ms (FindLiveObjects: 0.248900 ms CreateObjectMapping: 0.071600 ms MarkObjects: 1.718500 ms  DeleteObjects: 0.092000 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 146.974332 seconds.
-  path: Assets/Prefabs/BeardoImposter.prefab
-  artifactKey: Guid(25097e527ef26f546bf71f396a4f732a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BeardoImposter.prefab using Guid(25097e527ef26f546bf71f396a4f732a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1d5d454b96d75d818d2aa76d55a8508') in 0.211356 seconds
-  Import took 0.245492 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000364 seconds.
-  path: Assets/Prefabs/PopImposter.prefab
-  artifactKey: Guid(d27415b4059361c44a37826a31deabc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PopImposter.prefab using Guid(d27415b4059361c44a37826a31deabc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd68364a1d1145a41718611303a6a4a74') in 0.017754 seconds
-  Import took 0.020177 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000329 seconds.
-  path: Assets/Prefabs/SpikeImposter.prefab
-  artifactKey: Guid(af18432682710d84ba0a307944aa9e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SpikeImposter.prefab using Guid(af18432682710d84ba0a307944aa9e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e866ae10448458bdbd54a8a5216e047') in 0.055288 seconds
-  Import took 0.059583 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000327 seconds.
-  path: Assets/Prefabs/DecentImposter.prefab
-  artifactKey: Guid(dd8a64652e88537458ceb753b1c1c2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/DecentImposter.prefab using Guid(dd8a64652e88537458ceb753b1c1c2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de1a2bed948d3c5d452deb998d2a661d') in 0.020224 seconds
-  Import took 0.023714 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.021292 seconds.
-  path: Assets/Prefabs/DecentImposter.prefab
-  artifactKey: Guid(dd8a64652e88537458ceb753b1c1c2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/DecentImposter.prefab using Guid(dd8a64652e88537458ceb753b1c1c2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de1a2bed948d3c5d452deb998d2a661d') in 0.021389 seconds
-  Import took 0.024093 seconds .
+  Time since last request: 132.426794 seconds.
+  path: Assets/Scripts/CharacterManager/DoctorController.cs
+  artifactKey: Guid(cd3d841e4bc649c41b5177551c9008a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CharacterManager/DoctorController.cs using Guid(cd3d841e4bc649c41b5177551c9008a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f274d045feea9705e5c873e525672c6c') in 0.006081 seconds
+  Import took 0.098540 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000744 seconds.
+Registered in 0.000903 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.961 seconds
+- Completed reload, in  0.989 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1124 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 74.7 MB.
-System memory in use after: 74.8 MB.
+Unloading 1125 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 58.0 MB.
+System memory in use after: 58.0 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1588.
-Total: 1.808100 ms (FindLiveObjects: 0.140200 ms CreateObjectMapping: 0.035900 ms MarkObjects: 1.555000 ms  DeleteObjects: 0.076000 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1579.
+Total: 2.510500 ms (FindLiveObjects: 0.287100 ms CreateObjectMapping: 0.072500 ms MarkObjects: 2.080900 ms  DeleteObjects: 0.068400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 78.447397 seconds.
+  path: Assets/Prefabs/Roads.prefab
+  artifactKey: Guid(fe0692ec92584044f84867b9c302935d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Roads.prefab using Guid(fe0692ec92584044f84867b9c302935d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f02e7c389067431789e9ee1cf5a152da') in 0.214361 seconds
+  Import took 0.217255 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 138.803129 seconds.
+  path: Assets/Prefabs/DecentDoctor.prefab
+  artifactKey: Guid(0f9a3c18f1533c44486a44c1f8ef4c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DecentDoctor.prefab using Guid(0f9a3c18f1533c44486a44c1f8ef4c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0dfbe887b15fb531ae9be9816d9f472') in 0.105413 seconds
+  Import took 0.109075 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000717 seconds.
+Registered in 0.000788 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.998 seconds
+- Completed reload, in  1.011 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1125 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 74.8 MB.
 System memory in use after: 74.8 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1592.
-Total: 1.954100 ms (FindLiveObjects: 0.195500 ms CreateObjectMapping: 0.052900 ms MarkObjects: 1.620300 ms  DeleteObjects: 0.084000 ms)
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1592.
+Total: 1.845500 ms (FindLiveObjects: 0.174900 ms CreateObjectMapping: 0.040500 ms MarkObjects: 1.536600 ms  DeleteObjects: 0.092800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.446939 seconds.
+  path: Assets/Prefabs/DecentDoctor.prefab
+  artifactKey: Guid(0f9a3c18f1533c44486a44c1f8ef4c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DecentDoctor.prefab using Guid(0f9a3c18f1533c44486a44c1f8ef4c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7c21d966312920a4ff422bef1d04514') in 0.083491 seconds
+  Import took 0.099565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.937320 seconds.
+  path: Assets/Prefabs/DecentDoctor.prefab
+  artifactKey: Guid(0f9a3c18f1533c44486a44c1f8ef4c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DecentDoctor.prefab using Guid(0f9a3c18f1533c44486a44c1f8ef4c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dff6c1337fffb8d5a80906ce6d135ee0') in 0.027768 seconds
+  Import took 0.031413 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.049620 seconds.
+  path: Assets/Prefabs/DecentDoctor.prefab
+  artifactKey: Guid(0f9a3c18f1533c44486a44c1f8ef4c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DecentDoctor.prefab using Guid(0f9a3c18f1533c44486a44c1f8ef4c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65a3ec74b46362c0ca42efb5552cc5d3') in 0.026311 seconds
+  Import took 0.028909 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.017118 seconds.
+  path: Assets/Prefabs/DecentDoctor.prefab
+  artifactKey: Guid(0f9a3c18f1533c44486a44c1f8ef4c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DecentDoctor.prefab using Guid(0f9a3c18f1533c44486a44c1f8ef4c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa6a9e904f575097b7dd3aeffa25960f') in 0.024871 seconds
+  Import took 0.028486 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.807610 seconds.
+  path: Assets/Prefabs/DecentDoctor.prefab
+  artifactKey: Guid(0f9a3c18f1533c44486a44c1f8ef4c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DecentDoctor.prefab using Guid(0f9a3c18f1533c44486a44c1f8ef4c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f24c1336b924a3700fbd3d873b351cfc') in 0.026088 seconds
+  Import took 0.029620 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000781 seconds.
+Registered in 0.001115 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.048 seconds
+- Completed reload, in  1.011 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1125 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 74.8 MB.
-System memory in use after: 74.8 MB.
+System memory in use after: 74.9 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1595.
-Total: 1.943900 ms (FindLiveObjects: 0.265500 ms CreateObjectMapping: 0.089200 ms MarkObjects: 1.485800 ms  DeleteObjects: 0.102500 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 317.846854 seconds.
-  path: Assets/Prefabs/BeardoImposter.prefab
-  artifactKey: Guid(25097e527ef26f546bf71f396a4f732a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BeardoImposter.prefab using Guid(25097e527ef26f546bf71f396a4f732a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a193add0d930db76f0d2bb63f72dbfc') in 0.098121 seconds
-  Import took 0.189802 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000277 seconds.
-  path: Assets/Prefabs/PopImposter.prefab
-  artifactKey: Guid(d27415b4059361c44a37826a31deabc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PopImposter.prefab using Guid(d27415b4059361c44a37826a31deabc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c36bdd1e555ba75a22f7e0653a2ef63') in 0.023068 seconds
-  Import took 0.026205 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000320 seconds.
-  path: Assets/Prefabs/SpikeImposter.prefab
-  artifactKey: Guid(af18432682710d84ba0a307944aa9e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SpikeImposter.prefab using Guid(af18432682710d84ba0a307944aa9e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2dc95374285d31f389a00bbbb17fa84') in 0.025254 seconds
-  Import took 0.035713 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000361 seconds.
-  path: Assets/Prefabs/DecentImposter.prefab
-  artifactKey: Guid(dd8a64652e88537458ceb753b1c1c2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/DecentImposter.prefab using Guid(dd8a64652e88537458ceb753b1c1c2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83185b825aff5473d030f1f2b13a872d') in 0.024710 seconds
-  Import took 0.027247 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.445599 seconds.
-  path: Assets/Prefabs/BeardoImposter.prefab
-  artifactKey: Guid(25097e527ef26f546bf71f396a4f732a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BeardoImposter.prefab using Guid(25097e527ef26f546bf71f396a4f732a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5ed3334a42a2831e87a5a5c5c96442a') in 0.026052 seconds
-  Import took 0.029361 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000608 seconds.
-  path: Assets/Prefabs/PopImposter.prefab
-  artifactKey: Guid(d27415b4059361c44a37826a31deabc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PopImposter.prefab using Guid(d27415b4059361c44a37826a31deabc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93121b0aaef3a27cd432d35c73b9d9f9') in 0.024476 seconds
-  Import took 0.027377 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000343 seconds.
-  path: Assets/Prefabs/SpikeImposter.prefab
-  artifactKey: Guid(af18432682710d84ba0a307944aa9e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SpikeImposter.prefab using Guid(af18432682710d84ba0a307944aa9e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecdab2a596679143bba106ab3516cb35') in 0.025328 seconds
-  Import took 0.029074 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000363 seconds.
-  path: Assets/Prefabs/DecentImposter.prefab
-  artifactKey: Guid(dd8a64652e88537458ceb753b1c1c2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/DecentImposter.prefab using Guid(dd8a64652e88537458ceb753b1c1c2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db6d233d754c117193fe61536a018638') in 0.023179 seconds
-  Import took 0.026009 seconds .
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1596.
+Total: 1.963600 ms (FindLiveObjects: 0.172000 ms CreateObjectMapping: 0.035900 ms MarkObjects: 1.692400 ms  DeleteObjects: 0.062100 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000757 seconds.
+Registered in 0.000918 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.883 seconds
+- Completed reload, in  0.974 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1125 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 74.8 MB.
 System memory in use after: 74.9 MB.
 
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1599.
-Total: 1.650700 ms (FindLiveObjects: 0.148600 ms CreateObjectMapping: 0.070500 ms MarkObjects: 1.359700 ms  DeleteObjects: 0.071000 ms)
+Total: 2.118000 ms (FindLiveObjects: 0.183500 ms CreateObjectMapping: 0.038400 ms MarkObjects: 1.804100 ms  DeleteObjects: 0.090900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 25.158243 seconds.
-  path: Assets/Prefabs/PopImposter.prefab
-  artifactKey: Guid(d27415b4059361c44a37826a31deabc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PopImposter.prefab using Guid(d27415b4059361c44a37826a31deabc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a48e2d6dc56f0b0ed5919a62be4c7321') in 0.070209 seconds
-  Import took 0.072634 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.289376 seconds.
-  path: Assets/Prefabs/BeardoImposter.prefab
-  artifactKey: Guid(25097e527ef26f546bf71f396a4f732a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BeardoImposter.prefab using Guid(25097e527ef26f546bf71f396a4f732a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41d70961526e609cc98afc492f82629c') in 0.016795 seconds
-  Import took 0.020048 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000342 seconds.
-  path: Assets/Prefabs/SpikeImposter.prefab
-  artifactKey: Guid(af18432682710d84ba0a307944aa9e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SpikeImposter.prefab using Guid(af18432682710d84ba0a307944aa9e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14758d5a16c96f8cb52ceb041e27322b') in 0.019415 seconds
-  Import took 0.022008 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000381 seconds.
-  path: Assets/Prefabs/DecentImposter.prefab
-  artifactKey: Guid(dd8a64652e88537458ceb753b1c1c2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/DecentImposter.prefab using Guid(dd8a64652e88537458ceb753b1c1c2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7588a6b3ae95eca6fdd4c8d51113cb19') in 0.020278 seconds
-  Import took 0.023004 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.232638 seconds.
-  path: Assets/Prefabs/PopImposter.prefab
-  artifactKey: Guid(d27415b4059361c44a37826a31deabc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PopImposter.prefab using Guid(d27415b4059361c44a37826a31deabc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09537b93a298600bb64c3a73fffa5ab6') in 0.119823 seconds
-  Import took 0.122590 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000392 seconds.
-  path: Assets/Prefabs/SpikeImposter.prefab
-  artifactKey: Guid(af18432682710d84ba0a307944aa9e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SpikeImposter.prefab using Guid(af18432682710d84ba0a307944aa9e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a896cbb74f40e6281f0479a69d31599e') in 0.023793 seconds
-  Import took 0.027150 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000442 seconds.
-  path: Assets/Prefabs/DecentImposter.prefab
-  artifactKey: Guid(dd8a64652e88537458ceb753b1c1c2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/DecentImposter.prefab using Guid(dd8a64652e88537458ceb753b1c1c2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69ac8626db41528f7a06f21d50b7443c') in 0.023235 seconds
-  Import took 0.025646 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 20.393149 seconds.
-  path: Assets/Prefabs/DecentImposter.prefab
-  artifactKey: Guid(dd8a64652e88537458ceb753b1c1c2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/DecentImposter.prefab using Guid(dd8a64652e88537458ceb753b1c1c2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ee432f6e088ef72b3c65fbcb439828d') in 0.027766 seconds
-  Import took 0.030920 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000361 seconds.
-  path: Assets/Prefabs/PopImposter.prefab
-  artifactKey: Guid(d27415b4059361c44a37826a31deabc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PopImposter.prefab using Guid(d27415b4059361c44a37826a31deabc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7daca4240bf1dabf21e0a19aa199df35') in 0.020162 seconds
-  Import took 0.023493 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000268 seconds.
-  path: Assets/Prefabs/SpikeImposter.prefab
-  artifactKey: Guid(af18432682710d84ba0a307944aa9e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SpikeImposter.prefab using Guid(af18432682710d84ba0a307944aa9e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '535550ac7ef438d2ca2cd782a4621d1f') in 0.022347 seconds
-  Import took 0.026046 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.109505 seconds.
-  path: Assets/Prefabs/DecentImposter.prefab
-  artifactKey: Guid(dd8a64652e88537458ceb753b1c1c2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/DecentImposter.prefab using Guid(dd8a64652e88537458ceb753b1c1c2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba19dc9e5e3ba3e1122074e8f8fcae80') in 0.028176 seconds
-  Import took 0.031598 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000332 seconds.
-  path: Assets/Prefabs/PopImposter.prefab
-  artifactKey: Guid(d27415b4059361c44a37826a31deabc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PopImposter.prefab using Guid(d27415b4059361c44a37826a31deabc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4288d7d333e0f1949357845ecf5ccc8') in 0.021287 seconds
-  Import took 0.025456 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000277 seconds.
-  path: Assets/Prefabs/SpikeImposter.prefab
-  artifactKey: Guid(af18432682710d84ba0a307944aa9e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SpikeImposter.prefab using Guid(af18432682710d84ba0a307944aa9e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a065bf68abb60748079f8d87a47e8245') in 0.024128 seconds
-  Import took 0.026930 seconds .
+  Time since last request: 167.039587 seconds.
+  path: Assets/Prefabs/ImposterAffector.prefab
+  artifactKey: Guid(0a42845300f84fd46a0757328f49259a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ImposterAffector.prefab using Guid(0a42845300f84fd46a0757328f49259a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ca904c8e509f417584c9d858bed9f93') in 0.068899 seconds
+  Import took 0.071298 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003138 seconds.
+Registered in 0.000896 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.821 seconds
+- Completed reload, in  1.147 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.69 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1125 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 74.8 MB.
+System memory in use after: 74.9 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1603.
+Total: 3.229300 ms (FindLiveObjects: 0.247900 ms CreateObjectMapping: 0.069400 ms MarkObjects: 2.837100 ms  DeleteObjects: 0.073500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.966718 seconds.
+  path: Assets/Prefabs/ImposterAffector.prefab
+  artifactKey: Guid(0a42845300f84fd46a0757328f49259a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ImposterAffector.prefab using Guid(0a42845300f84fd46a0757328f49259a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70f5088c18464a08c64da53b4fb82653') in 0.074358 seconds
+  Import took 0.077229 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.472045 seconds.
+  path: Assets/Prefabs/DoctorAffector.prefab
+  artifactKey: Guid(f66bc669c5cb8f94c859f0cc689d6046) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DoctorAffector.prefab using Guid(f66bc669c5cb8f94c859f0cc689d6046) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '395ed49c13bd95eb1696d7511478cde3') in 0.019134 seconds
+  Import took 0.021664 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001171 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.919 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1125 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 74.9 MB.
+System memory in use after: 74.9 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1607.
+Total: 2.087400 ms (FindLiveObjects: 0.150400 ms CreateObjectMapping: 0.042200 ms MarkObjects: 1.824500 ms  DeleteObjects: 0.068800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 94.149812 seconds.
+  path: Assets/Prefabs/DoctorAffector.prefab
+  artifactKey: Guid(f66bc669c5cb8f94c859f0cc689d6046) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DoctorAffector.prefab using Guid(f66bc669c5cb8f94c859f0cc689d6046) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c33828e16f61e0c18b08aecb34edc17') in 0.082450 seconds
+  Import took 0.190200 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001889 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.011 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1125 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 74.9 MB.
+System memory in use after: 74.9 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1611.
+Total: 2.003200 ms (FindLiveObjects: 0.258500 ms CreateObjectMapping: 0.087900 ms MarkObjects: 1.601000 ms  DeleteObjects: 0.054600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000758 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.963 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1125 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 74.9 MB.
+System memory in use after: 74.9 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1614.
+Total: 2.429100 ms (FindLiveObjects: 0.408900 ms CreateObjectMapping: 0.059100 ms MarkObjects: 1.893900 ms  DeleteObjects: 0.065400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000986 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.004 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1125 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 74.9 MB.
+System memory in use after: 74.9 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1617.
+Total: 1.758700 ms (FindLiveObjects: 0.199900 ms CreateObjectMapping: 0.038000 ms MarkObjects: 1.439400 ms  DeleteObjects: 0.080500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 272.917361 seconds.
+  path: Assets/Prefabs/ImposterAffector.prefab
+  artifactKey: Guid(0a42845300f84fd46a0757328f49259a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ImposterAffector.prefab using Guid(0a42845300f84fd46a0757328f49259a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6ff1ac75dfd48975fbc857126233669') in 0.068059 seconds
+  Import took 0.070510 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002943 seconds.
+  path: Assets/Prefabs/ImposterAffector.prefab
+  artifactKey: Guid(0a42845300f84fd46a0757328f49259a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ImposterAffector.prefab using Guid(0a42845300f84fd46a0757328f49259a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6ff1ac75dfd48975fbc857126233669') in 0.009588 seconds
+  Import took 0.011930 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001187 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.959 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1125 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 74.9 MB.
 System memory in use after: 75.0 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1603.
-Total: 6.558200 ms (FindLiveObjects: 0.703500 ms CreateObjectMapping: 0.206000 ms MarkObjects: 5.488100 ms  DeleteObjects: 0.154100 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1621.
+Total: 1.753800 ms (FindLiveObjects: 0.121700 ms CreateObjectMapping: 0.034500 ms MarkObjects: 1.515100 ms  DeleteObjects: 0.081800 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000964 seconds.
+Registered in 0.000712 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.998 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1125 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 74.9 MB.
+System memory in use after: 75.0 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1624.
+Total: 2.021100 ms (FindLiveObjects: 0.178700 ms CreateObjectMapping: 0.039300 ms MarkObjects: 1.735000 ms  DeleteObjects: 0.066900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 169.590281 seconds.
+  path: Assets/Scripts/Affectors/DoctorAffector.cs
+  artifactKey: Guid(46abae1a4106c414fb70ab9efefba580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Affectors/DoctorAffector.cs using Guid(46abae1a4106c414fb70ab9efefba580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b6350983ced1c9e7a2d338ddc6682fd') in 0.004598 seconds
+  Import took 0.007447 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004592 seconds.
+  path: Assets/Scripts/Affectors/DoctorAffector.cs
+  artifactKey: Guid(46abae1a4106c414fb70ab9efefba580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Affectors/DoctorAffector.cs using Guid(46abae1a4106c414fb70ab9efefba580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b6350983ced1c9e7a2d338ddc6682fd') in 0.003333 seconds
+  Import took 0.006098 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000984 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.852 seconds
+- Completed reload, in  0.976 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1125 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 75.0 MB.
+System memory in use before: 74.9 MB.
 System memory in use after: 75.0 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1606.
-Total: 1.979600 ms (FindLiveObjects: 0.148400 ms CreateObjectMapping: 0.034200 ms MarkObjects: 1.719700 ms  DeleteObjects: 0.076200 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1627.
+Total: 1.684800 ms (FindLiveObjects: 0.129500 ms CreateObjectMapping: 0.036600 ms MarkObjects: 1.440300 ms  DeleteObjects: 0.077200 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 212.113888 seconds.
+  Time since last request: 60.538098 seconds.
   path: Assets/Prefabs/PopImposter.prefab
   artifactKey: Guid(d27415b4059361c44a37826a31deabc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PopImposter.prefab using Guid(d27415b4059361c44a37826a31deabc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '590159849aba9d145b97613bb7ec4f30') in 0.080375 seconds
-  Import took 0.083846 seconds .
+Start importing Assets/Prefabs/PopImposter.prefab using Guid(d27415b4059361c44a37826a31deabc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6764359eb7b76e8c7ee5ca62844f5a7a') in 0.079910 seconds
+  Import took 0.082493 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000408 seconds.
+  Time since last request: 0.000428 seconds.
   path: Assets/Prefabs/BeardoImposter.prefab
   artifactKey: Guid(25097e527ef26f546bf71f396a4f732a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BeardoImposter.prefab using Guid(25097e527ef26f546bf71f396a4f732a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d05a7a4c5f356f25654a9d28e4d343d') in 0.027086 seconds
-  Import took 0.030336 seconds .
+Start importing Assets/Prefabs/BeardoImposter.prefab using Guid(25097e527ef26f546bf71f396a4f732a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a61626f8fdae12b4b83c13c045516b30') in 0.022002 seconds
+  Import took 0.026043 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000427 seconds.
+  Time since last request: 0.000496 seconds.
   path: Assets/Prefabs/SpikeImposter.prefab
   artifactKey: Guid(af18432682710d84ba0a307944aa9e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SpikeImposter.prefab using Guid(af18432682710d84ba0a307944aa9e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2944302be26e9c1a64ff82408be3b559') in 0.019991 seconds
-  Import took 0.022642 seconds .
+Start importing Assets/Prefabs/SpikeImposter.prefab using Guid(af18432682710d84ba0a307944aa9e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2d0c17cd5615bd33b59ff0967d46059') in 0.027412 seconds
+  Import took 0.030832 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000359 seconds.
+  Time since last request: 0.000454 seconds.
   path: Assets/Prefabs/DecentImposter.prefab
   artifactKey: Guid(dd8a64652e88537458ceb753b1c1c2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/DecentImposter.prefab using Guid(dd8a64652e88537458ceb753b1c1c2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9105e6c29619a6d6e307e43880520275') in 0.024122 seconds
-  Import took 0.026619 seconds .
+Start importing Assets/Prefabs/DecentImposter.prefab using Guid(dd8a64652e88537458ceb753b1c1c2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eae877494c9a289f8da898e894badee6') in 0.025586 seconds
+  Import took 0.081612 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.722602 seconds.
+  Time since last request: 11.218573 seconds.
   path: Assets/Prefabs/BeardoImposter.prefab
   artifactKey: Guid(25097e527ef26f546bf71f396a4f732a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BeardoImposter.prefab using Guid(25097e527ef26f546bf71f396a4f732a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f050cc171a8f5ab154ec638b7f1b4f7') in 0.027597 seconds
-  Import took 0.030596 seconds .
+Start importing Assets/Prefabs/BeardoImposter.prefab using Guid(25097e527ef26f546bf71f396a4f732a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fa4717a25ad884e9d8d8fa385a91919') in 0.022770 seconds
+  Import took 0.181734 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.765175 seconds.
-  path: Assets/Prefabs/BeardoImposter.prefab
-  artifactKey: Guid(25097e527ef26f546bf71f396a4f732a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BeardoImposter.prefab using Guid(25097e527ef26f546bf71f396a4f732a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3488592dea846df76d1e8148d298cb7') in 0.122366 seconds
-  Import took 0.124929 seconds .
+  Time since last request: 0.000302 seconds.
+  path: Assets/Prefabs/PopImposter.prefab
+  artifactKey: Guid(d27415b4059361c44a37826a31deabc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PopImposter.prefab using Guid(d27415b4059361c44a37826a31deabc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9eac5163be660346f2ef41c2301f90d0') in 0.027765 seconds
+  Import took 0.030413 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 9.151078 seconds.
-  path: Assets/Prefabs/BeardoImposter.prefab
-  artifactKey: Guid(25097e527ef26f546bf71f396a4f732a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BeardoImposter.prefab using Guid(25097e527ef26f546bf71f396a4f732a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd29b8f14280e05365ba3aa84bfb6aecc') in 0.025961 seconds
-  Import took 0.029243 seconds .
+  Time since last request: 0.000343 seconds.
+  path: Assets/Prefabs/SpikeImposter.prefab
+  artifactKey: Guid(af18432682710d84ba0a307944aa9e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/SpikeImposter.prefab using Guid(af18432682710d84ba0a307944aa9e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a65710305830b777c90f4f069300d76c') in 0.022593 seconds
+  Import took 0.025442 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000374 seconds.
+  path: Assets/Prefabs/DecentImposter.prefab
+  artifactKey: Guid(dd8a64652e88537458ceb753b1c1c2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DecentImposter.prefab using Guid(dd8a64652e88537458ceb753b1c1c2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '027078ceea5fddf9d7cdfcd8e00c2cb8') in 0.023345 seconds
+  Import took 0.026266 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000785 seconds.
+Registered in 0.001021 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.935 seconds
+- Completed reload, in  1.062 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1125 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 75.0 MB.
+System memory in use before: 74.9 MB.
 System memory in use after: 75.0 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1610.
-Total: 1.974600 ms (FindLiveObjects: 0.275600 ms CreateObjectMapping: 0.042600 ms MarkObjects: 1.574700 ms  DeleteObjects: 0.080400 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1631.
+Total: 1.906800 ms (FindLiveObjects: 0.134300 ms CreateObjectMapping: 0.035300 ms MarkObjects: 1.672700 ms  DeleteObjects: 0.063700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 113.364052 seconds.
+  path: Assets/Prefabs/ImposterAffector.prefab
+  artifactKey: Guid(0a42845300f84fd46a0757328f49259a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ImposterAffector.prefab using Guid(0a42845300f84fd46a0757328f49259a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b45b2304b68fe48334fb496440a5734') in 0.072043 seconds
+  Import took 0.075010 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.041809 seconds.
+  path: Assets/Prefabs/ImposterAffector.prefab
+  artifactKey: Guid(0a42845300f84fd46a0757328f49259a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ImposterAffector.prefab using Guid(0a42845300f84fd46a0757328f49259a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7059e680115c9cb1a844bb9ebbef470a') in 0.013138 seconds
+  Import took 0.015895 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000689 seconds.
+Registered in 0.001537 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.166 seconds
+- Completed reload, in  0.927 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1125 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 75.0 MB.
-System memory in use after: 75.1 MB.
+System memory in use before: 74.9 MB.
+System memory in use after: 75.0 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1613.
-Total: 2.044800 ms (FindLiveObjects: 0.267200 ms CreateObjectMapping: 0.076500 ms MarkObjects: 1.610100 ms  DeleteObjects: 0.089700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000869 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.895 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1125 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 75.0 MB.
-System memory in use after: 75.1 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1616.
-Total: 2.733200 ms (FindLiveObjects: 0.492200 ms CreateObjectMapping: 0.105700 ms MarkObjects: 2.033400 ms  DeleteObjects: 0.100800 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1635.
+Total: 2.140400 ms (FindLiveObjects: 0.229800 ms CreateObjectMapping: 0.094900 ms MarkObjects: 1.721200 ms  DeleteObjects: 0.093200 ms)
 

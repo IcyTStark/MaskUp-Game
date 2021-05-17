@@ -554,7 +554,7 @@ BoxCollider:
   m_GameObject: {fileID: 2235002442591016042}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -682,6 +682,101 @@ Transform:
   m_Father: {fileID: 8216543058507542070}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3487804036833928251
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2098097066783865397}
+  - component: {fileID: 631819213297616933}
+  - component: {fileID: 7507843576761829781}
+  - component: {fileID: 4836475746742582135}
+  m_Layer: 0
+  m_Name: PopGirl Mask (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2098097066783865397
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3487804036833928251}
+  m_LocalRotation: {x: 0.0000000074505797, y: -2.6821865e-12, z: 7.000648e-13, w: 1}
+  m_LocalPosition: {x: 0.0006, y: 0.003, z: 0.045}
+  m_LocalScale: {x: 0.06, y: 0.019999998, z: 0.009999999}
+  m_Children: []
+  m_Father: {fileID: 7510814898868214817}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &631819213297616933
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3487804036833928251}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &7507843576761829781
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3487804036833928251}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: b7d3c02391e339e4f8f344da7517c521, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4836475746742582135
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3487804036833928251}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3827078922339947544
 GameObject:
   m_ObjectHideFlags: 0
@@ -696,6 +791,7 @@ GameObject:
   - component: {fileID: 8672408672485036021}
   - component: {fileID: 90021656675068860}
   - component: {fileID: 3725884769245607760}
+  - component: {fileID: -7333515035415269882}
   m_Layer: 0
   m_Name: PopImposter
   m_TagString: UnMasked
@@ -785,7 +881,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e26271438d9e02841b9b8ef124034c15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mask: {fileID: 2235002442591016042}
+  mask: {fileID: 3487804036833928251}
+  imposterMask: {fileID: 2235002442591016042}
 --- !u!114 &3725884769245607760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -799,10 +896,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goalLocations: []
-  affector: {fileID: 7421632550968968441, guid: 3a7b0107dd1df5947ad2fe76042cd230, type: 3}
+  affector: {fileID: 7421632550968968441, guid: 0a42845300f84fd46a0757328f49259a, type: 3}
   goalName: ImpostersGoal
   startWaitTime: 3
   timeItLasts: 3
+--- !u!54 &-7333515035415269882
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3827078922339947544}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3952169590419945283
 GameObject:
   m_ObjectHideFlags: 0
@@ -1475,6 +1588,7 @@ Transform:
   - {fileID: 4711479334208755919}
   - {fileID: 4886285932715683422}
   - {fileID: 1565693094565644073}
+  - {fileID: 2098097066783865397}
   m_Father: {fileID: 7183690447925081435}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

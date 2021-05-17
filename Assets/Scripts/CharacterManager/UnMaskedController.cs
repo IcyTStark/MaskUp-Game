@@ -5,13 +5,5 @@ using UnityEngine.AI;
 
 public class UnMaskedController : AffectorBase
 {
-    void Start()
-    {
-        Setgoals();
-    }
 
-    void Update()
-    {
-        StopandWalk();
-    }
 }

@@ -10,7 +10,7 @@ public class CharacterManager : MonoBehaviour
 
     private void Start()
     {
-        UnMasked();
+        //UnMasked();
         //Imposter();
     }
 
@@ -39,29 +39,29 @@ public class CharacterManager : MonoBehaviour
         }
     }
 
-    void UnMasked()
-    {
-        List<GameObject> temp = new List<GameObject>(characters);
-        int randomNumber = Random.Range(0, characters.Count);
-        for(int i= 0; i<randomNumber;i++)
-        {
-            int index = Random.Range(0, temp.Count);
-            temp[index].GetComponent<MaskStatus>().ToggleMask(false);
-            Debug.Log(temp[index].name);
-            temp.RemoveAt(index);
-        }
-    }
+    //void UnMasked()
+    //{
+    //    List<GameObject> temp = new List<GameObject>(characters);
+    //    int randomNumber = Random.Range(0, characters.Count);
+    //    for(int i= 0; i<randomNumber;i++)
+    //    {
+    //        int index = Random.Range(0, temp.Count);
+    //        temp[index].GetComponent<MaskStatus>().ToggleMask(false);
+    //        Debug.Log(temp[index].name);
+    //        temp.RemoveAt(index);
+    //    }
+    //}
 
     //void Imposter()
     //{
     //    List<GameObject> tempImp = new List<GameObject>(characters);
-    //    for(int j = 0; j < 2; j++)
+    //    for (int j = 0; j < 2; j++)
     //    {
     //        int index_1 = Random.Range(0, tempImp.Count);
-    //        tempImp[index_1].GetComponent<MaskStatus>().ToggleMask(false);
+    //        tempImp[index_1].GetComponent<MaskStatus>().ToggleImposterMask(false);
     //        Debug.Log(tempImp[index_1].name);
     //        tempImp.RemoveAt(index_1);
     //    }
-            
+
     //}
 }

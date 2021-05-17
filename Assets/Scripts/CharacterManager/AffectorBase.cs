@@ -9,20 +9,26 @@ public class AffectorBase : MonoBehaviour
     [Tooltip("Points where the people should roam around")]
     [SerializeField] GameObject[] goalLocations;
     [SerializeField] GameObject affector;
+    [Tooltip("Goal they are suppoused to be roaming around")]
     [SerializeField] string goalName;
 
     float waitTime;
+    [Tooltip("Time they should wait at each point")]
     [SerializeField] float startWaitTime;
 
     NavMeshAgent agent; //Gets the agent attached with each player
     Animator anim;  //Gets their animation component
 
     float speedMult;
+    [Tooltip("Time the affect lasts on their wait")]
     [SerializeField] float timeItLasts;
 
     void Start()
     {
+        waitTime = startWaitTime;
         Setgoals();
+        StartCoroutine(StopAndWalkCoroutine());
+        CharacterManager.Instance.characters.Add(gameObject);
     }
 
     public void Setgoals()
@@ -46,29 +52,41 @@ public class AffectorBase : MonoBehaviour
     }
     void Update()
     {
-        StopandWalk();
+        //StopandWalk();
     }
 
-    public void StopandWalk()
+    //public void StopandWalk()
+    //{
+        
+    //}
+
+    IEnumerator StopAndWalkCoroutine()
     {
-        if (agent.remainingDistance < 1)
+        while (true)
         {
-            if (waitTime <= 0)
+            if (agent.remainingDistance < 0.1f)
             {
-                //anim.SetTrigger("isWalking");
-                ResetAgent();
-                agent.SetDestination(goalLocations[Random.Range(0, goalLocations.Length)].transform.position);
-                waitTime = startWaitTime;
-
+                if (waitTime <= 0)
+                {
+                    //anim.SetTrigger("isWalking");
+                    ResetAgent();
+                    agent.SetDestination(goalLocations[Random.Range(0, goalLocations.Length)].transform.position);
+                    waitTime = startWaitTime;
+                }
+                else 
+                {
+                    //Debug.Log(gameObject.name + "waiting");
+                    anim.SetTrigger("isIdle");
+                    if (waitTime == startWaitTime)
+                    {
+                        GameObject affectLocation = Instantiate(affector, agent.transform.position, agent.transform.rotation);
+                        Destroy(affectLocation, timeItLasts);
+                    }
+                    waitTime -= Time.deltaTime;
+                }
 
             }
-            else
-            {
-                anim.SetTrigger("isIdle");
-                GameObject affectLocation = Instantiate(affector, agent.transform.position, agent.transform.rotation);
-                Destroy(affectLocation, timeItLasts);
-                waitTime -= Time.deltaTime;
-            }
+            yield return null;
         }
     }
 }
