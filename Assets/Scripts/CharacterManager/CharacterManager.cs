@@ -44,14 +44,14 @@ public class CharacterManager : MonoBehaviour
 
     void Update()
     {
-        //foreach(GameObject gO in characters)
-        //{
-        //    if (!characters.Any(gO => gO.tag == "UnMasked"))
-        //    {
-        //        SceneManager.LoadScene(1);
-        //    }
-          
-        //}
+        foreach (GameObject gO in characters)
+        {
+            if (!characters.Any(gO => gO.tag == "UnMasked"))
+            {
+                SceneManager.LoadScene(1);
+            }
+
+        }
     }
 
     //o => o.tag == "UnMasked"

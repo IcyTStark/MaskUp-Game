@@ -31,8 +31,7 @@ public class Sanitize : MonoBehaviour
                 {
                     Debug.Log("Im being Hit");
                     GameObject sprayThing = Instantiate(spray, hitInfo.transform.position, Quaternion.identity);
-                    //Instantiate(anim, hitInfo.transform.position, Quaternion.identity);
-                    anim.Play("cleaning");
+                    //anim.Play("cleaning");
                     Destroy(sprayThing, 2f);
                     Destroy(hitInfo.transform.gameObject, 2f);
                 }
