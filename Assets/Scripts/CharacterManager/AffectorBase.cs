@@ -25,10 +25,10 @@ public class AffectorBase : MonoBehaviour
 
     void Start()
     {
+        CharacterManager.Instance.characters.Add(gameObject);
         waitTime = startWaitTime;
         Setgoals();
         StartCoroutine(StopAndWalkCoroutine());
-        CharacterManager.Instance.characters.Add(gameObject);
     }
 
     public void Setgoals()

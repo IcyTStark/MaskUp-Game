@@ -19,6 +19,6 @@ public class MaskStatus : MonoBehaviour
     public void ToggleImposterMask(bool state)
     {
         imposterMask.SetActive(state);
-        gameObject.tag = state ? "Masked" : "Imposter";
+        gameObject.tag = state ? "Imposter" : "Masked";
     }
 }

@@ -12,6 +12,7 @@ TagManager:
   - Imposter
   - DoctorGoal
   - Doctor
+  - SickAffector
   layers:
   - Default
   - TransparentFX

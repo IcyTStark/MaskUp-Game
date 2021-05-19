@@ -1,6 +1,8 @@
 using System.Collections;
+using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharacterManager : MonoBehaviour
 {
@@ -10,6 +12,7 @@ public class CharacterManager : MonoBehaviour
 
     private void Start()
     {
+        
         //UnMasked();
         //Imposter();
     }
@@ -39,6 +42,19 @@ public class CharacterManager : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        //foreach(GameObject gO in characters)
+        //{
+        //    if (!characters.Any(gO => gO.tag == "UnMasked"))
+        //    {
+        //        SceneManager.LoadScene(1);
+        //    }
+          
+        //}
+    }
+
+    //o => o.tag == "UnMasked"
     //void UnMasked()
     //{
     //    List<GameObject> temp = new List<GameObject>(characters);

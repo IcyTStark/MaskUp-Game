@@ -23,6 +23,11 @@ public class TouchManager : MonoBehaviour
                 {
                     hitInfo.transform.gameObject.GetComponent<MaskStatus>().ToggleMask(true);
                 }
+                if(hitInfo.transform.gameObject.tag == "Imposter")
+                {
+                    hitInfo.transform.gameObject.GetComponent<MaskStatus>().ToggleImposterMask(false);
+                    hitInfo.transform.gameObject.GetComponent<MaskStatus>().ToggleMask(true);
+                }
             }
         }
         

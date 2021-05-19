@@ -875,7 +875,7 @@ GameObject:
   - component: {fileID: 493800904479438416}
   m_Layer: 0
   m_Name: DecentDoctor
-  m_TagString: Untagged
+  m_TagString: Doctor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -977,7 +977,7 @@ Animator:
   m_GameObject: {fileID: 6567386718276090389}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5a0ce0bafa1f1f545b7694cc1a397a39, type: 2}
+  m_Controller: {fileID: 9100000, guid: f2ef6f83754f5c040a743375cdc12c8a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

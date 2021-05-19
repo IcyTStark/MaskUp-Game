@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7421632550968968440}
   - component: {fileID: 2936001149035026968}
   m_Layer: 0
-  m_Name: Affector
+  m_Name: UnMaskedAffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49,7 +49,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7421632550968968441}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
