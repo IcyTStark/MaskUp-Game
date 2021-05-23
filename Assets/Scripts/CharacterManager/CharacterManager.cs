@@ -46,7 +46,7 @@ public class CharacterManager : MonoBehaviour
     {
         foreach (GameObject gO in characters)
         {
-            if (!characters.Any(gO => gO.tag == "UnMasked"))
+            if (!characters.Any(gO => gO.tag == "UnMasked") && !characters.Any(gO => gO.tag == "Imposter") && !characters.Any(gO=>gO.tag == "Sick"))
             {
                 SceneManager.LoadScene(1);
             }

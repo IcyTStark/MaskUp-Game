@@ -6,9 +6,7 @@ using UnityEngine.UI;
 public class Sanitize : MonoBehaviour
 {
     [SerializeField] GameObject spray;
-    //[SerializeField] Animation animation;
-    [SerializeField] Animator anim;
-    bool buttonClicked;
+    [SerializeField] GameObject particleSpawn;
     private void Update()
     {
         Sanitizing();
@@ -23,17 +21,17 @@ public class Sanitize : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            RaycastHit hitInfo;
+            RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out hitInfo))
+            if (Physics.Raycast(ray, out hit))
             {
-                if (hitInfo.transform.gameObject.tag == "SickAffector")
+                if (hit.transform.gameObject.tag == "SickAffector")
                 {
-                    Debug.Log("Im being Hit");
-                    GameObject sprayThing = Instantiate(spray, hitInfo.transform.position, Quaternion.identity);
-                    //anim.Play("cleaning");
+                    GameObject sprayThing = Instantiate(spray, hit.transform.position, Quaternion.identity);
+                    GameObject particleToClean = Instantiate(particleSpawn, hit.transform.position, Quaternion.identity);
                     Destroy(sprayThing, 2f);
-                    Destroy(hitInfo.transform.gameObject, 2f);
+                    Destroy(particleToClean, 4f);
+                    Destroy(hit.transform.gameObject, 2f);
                 }
             }
         }

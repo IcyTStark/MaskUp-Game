@@ -6,14 +6,18 @@ public class DoctorAffector : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "UnMasked")
+        if (other.gameObject.tag == "UnMasked")
         {
-            other.GetComponent<MaskStatus>().ToggleMask(true);
+            other.GetComponent<MaskStatus>().ToggleMask(1);
         }
-        if(other.gameObject.tag == "Imposter")
+        if (other.gameObject.tag == "Imposter")
         {
-            other.GetComponent<MaskStatus>().ToggleImposterMask(false);
-            other.GetComponent<MaskStatus>().ToggleMask(true);
+            other.GetComponent<MaskStatus>().ToggleImposterMask(2);
+            other.GetComponent<MaskStatus>().ToggleMask(1);
+        }
+        if(other.gameObject.tag == "Sick")
+        {
+            other.GetComponent<MaskStatus>().ToggleSickPeople(2);
         }
     }
 }

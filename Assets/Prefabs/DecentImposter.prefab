@@ -726,6 +726,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mask: {fileID: 178288621027512357}
   imposterMask: {fileID: 6490869920947870965}
+  cleanCharacter: {fileID: 3362696500563485746, guid: 8b12a791a3033c6428334dd3b2158c3c, type: 3}
+  sickCharacter: {fileID: 34666615409016542, guid: 8e80f868a5c5c154c8c845cfd9650f6c, type: 3}
 --- !u!114 &1799667888408191605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -739,7 +741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goalLocations: []
-  affector: {fileID: 7421632550968968441, guid: 0a42845300f84fd46a0757328f49259a, type: 3}
+  affector: {fileID: 1697290609678423891, guid: 7dd7feeb26bae994faf19519b51e0b14, type: 3}
   goalName: ImpostersGoal
   startWaitTime: 3
   timeItLasts: 3

@@ -6,14 +6,14 @@ public class ImposterAffector : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Masked")
+        if (other.gameObject.tag == "Masked")
         {
-            other.GetComponent<MaskStatus>().ToggleMask(false);
-            other.GetComponent<MaskStatus>().ToggleImposterMask(true);
+            other.GetComponent<MaskStatus>().ToggleMask(2);
+            other.GetComponent<MaskStatus>().ToggleImposterMask(1);
         }
-        if(other.gameObject.tag == "UnMasked")
+        if (other.gameObject.tag == "UnMasked")
         {
-            other.GetComponent<MaskStatus>().ToggleImposterMask(true);
+            other.GetComponent<MaskStatus>().ToggleImposterMask(1);
         }
     }
 }

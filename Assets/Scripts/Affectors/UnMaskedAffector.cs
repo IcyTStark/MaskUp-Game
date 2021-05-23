@@ -8,7 +8,7 @@ public class UnMaskedAffector : MonoBehaviour
     {
         if(other.gameObject.tag == "Masked")
         {
-            other.GetComponent<MaskStatus>().ToggleMask(false);
+            other.GetComponent<MaskStatus>().ToggleMask(2);
         }
     }
 }

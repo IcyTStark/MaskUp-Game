@@ -19,14 +19,23 @@ public class TouchManager : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hitInfo))
             {
+                Debug.DrawLine(ray.origin, hitInfo.point);
+                Debug.LogError("Raycast Hit" + hitInfo.collider.name);
+                //GameObject go = Instantiate(GameObject.CreatePrimitive(PrimitiveType.Sphere));
+                //go.transform.position = hitInfo.point;
                 if (hitInfo.transform.gameObject.tag == "UnMasked")
                 {
-                    hitInfo.transform.gameObject.GetComponent<MaskStatus>().ToggleMask(true);
+                    hitInfo.transform.gameObject.GetComponent<MaskStatus>().ToggleMask(1);
                 }
-                if(hitInfo.transform.gameObject.tag == "Imposter")
+                if (hitInfo.transform.gameObject.tag == "Imposter")
                 {
-                    hitInfo.transform.gameObject.GetComponent<MaskStatus>().ToggleImposterMask(false);
-                    hitInfo.transform.gameObject.GetComponent<MaskStatus>().ToggleMask(true);
+                    hitInfo.transform.gameObject.GetComponent<MaskStatus>().ToggleImposterMask(2);
+                    hitInfo.transform.gameObject.GetComponent<MaskStatus>().ToggleMask(1);
+                }
+                if (hitInfo.transform.gameObject.tag == "Sick")
+                {
+                    Debug.Log("Yo,stop poking me");
+                    hitInfo.transform.gameObject.GetComponent<MaskStatus>().ToggleSickPeople(2);
                 }
             }
         }

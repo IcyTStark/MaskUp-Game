@@ -963,7 +963,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goalLocations: []
-  affector: {fileID: 7421632550968968441, guid: f66bc669c5cb8f94c859f0cc689d6046, type: 3}
+  affector: {fileID: 1719701259625277143, guid: 259179506972f64458fd801053fc1a1b, type: 3}
   goalName: DoctorGoal
   startWaitTime: 3
   timeItLasts: 3

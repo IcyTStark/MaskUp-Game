@@ -27,18 +27,13 @@ public class AffectorBase : MonoBehaviour
     {
         CharacterManager.Instance.characters.Add(gameObject);
         waitTime = startWaitTime;
-        Setgoals();
-        StartCoroutine(StopAndWalkCoroutine());
-    }
-
-    public void Setgoals()
-    {
         goalLocations = GameObject.FindGameObjectsWithTag(goalName);
         agent = this.GetComponent<NavMeshAgent>();
         agent.SetDestination(goalLocations[Random.Range(0, goalLocations.Length)].transform.position);
         anim = this.GetComponent<Animator>();
         anim.SetFloat("woffset", Random.Range(0.0f, 1.0f));
         ResetAgent();
+        StartCoroutine(StopAndWalkCoroutine());
     }
 
     public void ResetAgent()
@@ -57,14 +52,14 @@ public class AffectorBase : MonoBehaviour
 
     //public void StopandWalk()
     //{
-        
+
     //}
 
     IEnumerator StopAndWalkCoroutine()
     {
         while (true)
         {
-            if (agent.remainingDistance < 0.1f)
+            if (agent.remainingDistance < 1f)
             {
                 if (waitTime <= 0)
                 {
@@ -73,13 +68,17 @@ public class AffectorBase : MonoBehaviour
                     agent.SetDestination(goalLocations[Random.Range(0, goalLocations.Length)].transform.position);
                     waitTime = startWaitTime;
                 }
-                else 
+                else
                 {
-                    //Debug.Log(gameObject.name + "waiting");
-                    anim.SetTrigger("isIdle");
-                    if (waitTime == startWaitTime)
+                    if(agent.remainingDistance == 0)
                     {
-                        GameObject affectLocation = Instantiate(affector, agent.transform.position, agent.transform.rotation);
+                        Debug.LogError(agent.remainingDistance);
+                        anim.SetTrigger("isIdle");
+                    }
+                    //Debug.Log(gameObject.name + "waiting");
+                    if (waitTime == 3)
+                    {
+                        GameObject affectLocation = Instantiate(affector, agent.transform.position - new Vector3(0f, 0.4f, 0f), agent.transform.rotation);
                         Destroy(affectLocation, timeItLasts);
                     }
                     waitTime -= Time.deltaTime;
