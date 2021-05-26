@@ -44,6 +44,7 @@ public class PanZoom : MonoBehaviour
             pos += (trans.right * dir.x) * dragSpeed;
             pos.x = Mathf.Clamp(pos.x, outerLeft, outerRight);
             trans.position = pos;
+            
         }
     }
 

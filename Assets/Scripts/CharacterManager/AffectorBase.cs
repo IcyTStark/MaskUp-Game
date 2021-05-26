@@ -22,6 +22,9 @@ public class AffectorBase : MonoBehaviour
     float speedMult;
     [Tooltip("Time the affect lasts on their wait")]
     [SerializeField] float timeItLasts;
+    
+    GameObject target;
+    GameObject affectLocation;
 
     void Start()
     {
@@ -29,7 +32,8 @@ public class AffectorBase : MonoBehaviour
         waitTime = startWaitTime;
         goalLocations = GameObject.FindGameObjectsWithTag(goalName);
         agent = this.GetComponent<NavMeshAgent>();
-        agent.SetDestination(goalLocations[Random.Range(0, goalLocations.Length)].transform.position);
+        target = goalLocations[Random.Range(0, goalLocations.Length)];
+        agent.SetDestination(target.transform.position);
         anim = this.GetComponent<Animator>();
         anim.SetFloat("woffset", Random.Range(0.0f, 1.0f));
         ResetAgent();
@@ -47,6 +51,7 @@ public class AffectorBase : MonoBehaviour
     }
     void Update()
     {
+        
         //StopandWalk();
     }
 
@@ -59,31 +64,48 @@ public class AffectorBase : MonoBehaviour
     {
         while (true)
         {
-            if (agent.remainingDistance < 1f)
+            
+            //Debug.Log(agent.remainingDistance);
+            if (agent.remainingDistance < 0.1f)
             {
                 if (waitTime <= 0)
                 {
                     //anim.SetTrigger("isWalking");
                     ResetAgent();
-                    agent.SetDestination(goalLocations[Random.Range(0, goalLocations.Length)].transform.position);
+                    int index = Random.Range(0, goalLocations.Length);
+                    while(goalLocations[index] == target)
+                    {
+                        index = Random.Range(0, goalLocations.Length);
+                    }
+                    target = goalLocations[index];
+                    agent.SetDestination(target.transform.position);
                     waitTime = startWaitTime;
+                    
                 }
                 else
                 {
                     if(agent.remainingDistance == 0)
                     {
-                        Debug.LogError(agent.remainingDistance);
+                        //Debug.LogError(agent.remainingDistance);
                         anim.SetTrigger("isIdle");
                     }
-                    //Debug.Log(gameObject.name + "waiting");
-                    if (waitTime == 3)
+                    //Debug.Log(gameObject.name + "waiting")
+                    if (waitTime <= 2 && affectLocation == null)
                     {
-                        GameObject affectLocation = Instantiate(affector, agent.transform.position - new Vector3(0f, 0.4f, 0f), agent.transform.rotation);
+                        
+                        affectLocation = Instantiate(affector, agent.transform.position - new Vector3(0f, 0.4f, 0f), agent.transform.rotation);
                         Destroy(affectLocation, timeItLasts);
                     }
-                    waitTime -= Time.deltaTime;
+                    waitTime -= 1 * Time.deltaTime;
+                    //WaitingTime = Mathf.RoundToInt(waitTime);
+                    //Debug.Log(WaitingTime);
+
                 }
 
+            }
+            else
+            {
+                anim.SetTrigger("isWalking");
             }
             yield return null;
         }

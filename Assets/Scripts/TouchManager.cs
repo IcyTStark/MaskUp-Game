@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class TouchManager : MonoBehaviour
 {
+    NavMeshAgent agent;
     void Start()
     {
         
@@ -19,26 +20,43 @@ public class TouchManager : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hitInfo))
             {
-                Debug.DrawLine(ray.origin, hitInfo.point);
-                Debug.LogError("Raycast Hit" + hitInfo.collider.name);
-                //GameObject go = Instantiate(GameObject.CreatePrimitive(PrimitiveType.Sphere));
-                //go.transform.position = hitInfo.point;
                 if (hitInfo.transform.gameObject.tag == "UnMasked")
                 {
                     hitInfo.transform.gameObject.GetComponent<MaskStatus>().ToggleMask(1);
+                    //hitInfo.transform.gameObject.GetComponent<NavMeshAgent>().speed = 0;
+                    //StartCoroutine(WalkAgainn());
                 }
                 if (hitInfo.transform.gameObject.tag == "Imposter")
                 {
                     hitInfo.transform.gameObject.GetComponent<MaskStatus>().ToggleImposterMask(2);
                     hitInfo.transform.gameObject.GetComponent<MaskStatus>().ToggleMask(1);
+                    Destroy(hitInfo.transform.gameObject.GetComponent<ImposterController>());
+
+                    //hitInfo.transform.gameObject.GetComponent<ImposterController>().enabled = false;
+                    Debug.Log("I'M Disabled");
+                    hitInfo.transform.gameObject.AddComponent<AIController>();
+                    hitInfo.transform.gameObject.GetComponent<MaskStatus>().ToggleImposterMask(2);
+                    //hitInfo.transform.gameObject.GetComponent<NavMeshAgent>().speed = 0;
+                    //hitInfo.transform.gameObject.GetComponent<MaskStatus>().ToggleMask(1);
+                    //hitInfo.transform.gameObject.GetComponent<NavMeshAgent>().speed = 0;
+                    //StartCoroutine(WalkAgainn());
                 }
                 if (hitInfo.transform.gameObject.tag == "Sick")
                 {
-                    Debug.Log("Yo,stop poking me");
                     hitInfo.transform.gameObject.GetComponent<MaskStatus>().ToggleSickPeople(2);
+                    //hitInfo.transform.gameObject.GetComponent<NavMeshAgent>().speed = 0;
+                    //StartCoroutine(WalkAgainn());
                 }
             }
+           
+            //IEnumerator WalkAgainn()
+            //{
+            //    hitInfo.transform.gameObject.GetComponent<AffectorBase>().ResetAgent();
+            //    yield return new WaitForSeconds(2f * Time.deltaTime);
+            //}
         }
+
+        
         
        
     }
