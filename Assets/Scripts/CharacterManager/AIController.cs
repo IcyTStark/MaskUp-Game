@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.UI;
 
 public class AIController : MonoBehaviour
 {
@@ -20,6 +19,7 @@ public class AIController : MonoBehaviour
     void Start()
     {
         CharacterManager.Instance.characters.Add(gameObject);
+        CharacterManager.Instance.maskedCharacters.Add(gameObject);
         goalLocations = GameObject.FindGameObjectsWithTag("goal");
         agent = this.GetComponent<NavMeshAgent>();
         agent.SetDestination(goalLocations[Random.Range(0, goalLocations.Length)].transform.position);
@@ -36,6 +36,11 @@ public class AIController : MonoBehaviour
         anim.SetTrigger("isWalking");
         agent.ResetPath();
     }
+    private void OnDestroy()
+    {
+        CharacterManager.Instance.characters.Remove(gameObject);
+        CharacterManager.Instance.maskedCharacters.Remove(gameObject);
+    }
     void Update()
     {
         if(agent.remainingDistance < 1)
@@ -46,24 +51,4 @@ public class AIController : MonoBehaviour
     }
 }
 
-
-//public void DetectNewObstacle(Vector3 position)
-//{
-//    if(Vector3.Distance(position,this.transform.position) < detectionRadius)
-//    {
-//        Vector3 fleeDirection = (this.transform.position - position).normalized;
-//        Vector3 newgoal = this.transform.position + fleeDirection * fleeRadius;
-
-//        NavMeshPath path = new NavMeshPath();
-//        agent.CalculatePath(newgoal, path);
-
-//        if(path.status != NavMeshPathStatus.PathInvalid)
-//        {
-//            agent.SetDestination(path.corners[path.corners.Length - 1]);
-//            anim.SetTrigger("isRunning");
-//            agent.speed = 10;
-//            agent.angularSpeed = 500;
-//        }
-//    }
-//}
 

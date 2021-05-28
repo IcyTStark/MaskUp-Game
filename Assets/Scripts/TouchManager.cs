@@ -5,13 +5,11 @@ using UnityEngine.AI;
 
 public class TouchManager : MonoBehaviour
 {
-    NavMeshAgent agent;
-    void Start()
+    [SerializeField] GameObject HealthyBubble;
+    private void Start()
     {
-        
+        HealthyBubble = Resources.Load("DecentManBubble") as GameObject;
     }
-
-    
     void Update()
     {
         if(Input.GetMouseButtonDown(0))
@@ -22,38 +20,53 @@ public class TouchManager : MonoBehaviour
             {
                 if (hitInfo.transform.gameObject.tag == "UnMasked")
                 {
-                    hitInfo.transform.gameObject.GetComponent<MaskStatus>().ToggleMask(1);
-                    //hitInfo.transform.gameObject.GetComponent<NavMeshAgent>().speed = 0;
-                    //StartCoroutine(WalkAgainn());
+                    hitInfo.transform.gameObject.GetComponent<MaskStatus>().ToggleUnMask(2);
+                    StartCoroutine(UMWalkAgain());
                 }
                 if (hitInfo.transform.gameObject.tag == "Imposter")
                 {
-                    hitInfo.transform.gameObject.GetComponent<MaskStatus>().ToggleImposterMask(2);
-                    hitInfo.transform.gameObject.GetComponent<MaskStatus>().ToggleMask(1);
-                    Destroy(hitInfo.transform.gameObject.GetComponent<ImposterController>());
-
-                    //hitInfo.transform.gameObject.GetComponent<ImposterController>().enabled = false;
-                    Debug.Log("I'M Disabled");
-                    hitInfo.transform.gameObject.AddComponent<AIController>();
-                    hitInfo.transform.gameObject.GetComponent<MaskStatus>().ToggleImposterMask(2);
-                    //hitInfo.transform.gameObject.GetComponent<NavMeshAgent>().speed = 0;
-                    //hitInfo.transform.gameObject.GetComponent<MaskStatus>().ToggleMask(1);
-                    //hitInfo.transform.gameObject.GetComponent<NavMeshAgent>().speed = 0;
-                    //StartCoroutine(WalkAgainn());
+                    hitInfo.transform.gameObject.GetComponent<MaskStatus>().ToggleImposter(2);
+                    hitInfo.transform.gameObject.GetComponent<MaskStatus>().ToggleUnMask(2);
+                    StartCoroutine(IWalkAgain());
                 }
                 if (hitInfo.transform.gameObject.tag == "Sick")
                 {
                     hitInfo.transform.gameObject.GetComponent<MaskStatus>().ToggleSickPeople(2);
-                    //hitInfo.transform.gameObject.GetComponent<NavMeshAgent>().speed = 0;
-                    //StartCoroutine(WalkAgainn());
+                    StartCoroutine(SWalkAgain());
                 }
             }
-           
-            //IEnumerator WalkAgainn()
-            //{
-            //    hitInfo.transform.gameObject.GetComponent<AffectorBase>().ResetAgent();
-            //    yield return new WaitForSeconds(2f * Time.deltaTime);
-            //}
+
+            IEnumerator UMWalkAgain()
+            {
+                Destroy(hitInfo.transform.gameObject.GetComponent<UnMaskedController>());
+                hitInfo.transform.gameObject.GetComponent<NavMeshAgent>().speed = 0;
+                GameObject mbub = Instantiate(HealthyBubble, hitInfo.transform.gameObject.transform.position + new Vector3(1f, 1.7f, 0), Quaternion.identity);
+                Destroy(mbub, 1f);
+                yield return new WaitForSeconds(2f);
+                hitInfo.transform.gameObject.AddComponent<AIController>();
+                hitInfo.transform.gameObject.GetComponent<NavMeshAgent>().speed = 2;
+            }
+            
+            IEnumerator IWalkAgain()
+            {
+                hitInfo.transform.gameObject.GetComponent<NavMeshAgent>().speed = 0;
+                Destroy(hitInfo.transform.GetComponent<ImposterController>());
+                Destroy(hitInfo.transform.GetComponent<UnMaskedController>());
+                GameObject mbub = Instantiate(HealthyBubble, hitInfo.transform.gameObject.transform.position + new Vector3(1f, 1.7f, 0), Quaternion.identity);
+                Destroy(mbub, 1f);
+                yield return new WaitForSeconds(2f);
+                hitInfo.transform.gameObject.AddComponent<AIController>();
+                hitInfo.transform.gameObject.GetComponent<NavMeshAgent>().speed = 2;
+            }
+            
+            IEnumerator SWalkAgain()
+            {
+                hitInfo.transform.gameObject.GetComponent<NavMeshAgent>().speed = 0;
+                GameObject mbub = Instantiate(HealthyBubble, hitInfo.transform.gameObject.transform.position + new Vector3(1f, 1.7f, 0), Quaternion.identity);
+                Destroy(mbub, 1f);
+                yield return new WaitForSeconds(2f);
+                hitInfo.transform.gameObject.GetComponent<NavMeshAgent>().speed = 2;
+            }
         }
 
         

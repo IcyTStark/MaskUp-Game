@@ -19,12 +19,11 @@ public class PerspectivePanning : MonoBehaviour
         {
             Vector3 direction = touchStart - GetWorldPosition(groundZ);
             direction.y = 0;
-            direction.Normalize();
             cam.transform.position += direction;
             Vector3 clampPos = cam.transform.position;
-            //cam.transform.position = new Vector3(Mathf.Clamp(clampPos.x, -10f, 10f),clampPos.y,clampPos.z);
+            cam.transform.position = new Vector3(Mathf.Clamp(clampPos.x, -10f, 10f), clampPos.y, clampPos.z);
             clampPos.x = Mathf.Clamp(cam.transform.position.x, -10f, 10f);
-            cam.transform.position = clampPos;
+            //cam.transform.position = clampPos;
             
         }
     }

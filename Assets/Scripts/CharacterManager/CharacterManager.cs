@@ -7,12 +7,17 @@ using UnityEngine.SceneManagement;
 public class CharacterManager : MonoBehaviour
 {
     public List<GameObject> characters = new List<GameObject>();
+    public List<GameObject> unMaskedCharacters = new List<GameObject>();
+    public List<GameObject> maskedCharacters = new List<GameObject>();
+    public List<GameObject> sickCharacters = new List<GameObject>();
+    public List<GameObject> imposterCharacters = new List<GameObject>();
+
+    [SerializeField] int loseNumber = 2;
     
     private static CharacterManager _instance;
 
     private void Start()
     {
-        
         //UnMasked();
         //Imposter();
     }
@@ -44,14 +49,38 @@ public class CharacterManager : MonoBehaviour
 
     void Update()
     {
-        foreach (GameObject gO in characters)
+        //foreach (GameObject gO in characters)
+        //{
+        //    if (!characters.Any(gO => gO.tag == "UnMasked") && !characters.Any(gO => gO.tag == "Imposter") && !characters.Any(gO => gO.tag == "Sick"))
+        //    {
+        //        Invoke("nextLevel", 5f);
+        //    }
+        //}
+        if (maskedCharacters.Count == characters.Count)
         {
-            if (!characters.Any(gO => gO.tag == "UnMasked") && !characters.Any(gO => gO.tag == "Imposter") && !characters.Any(gO=>gO.tag == "Sick"))
-            {
-                SceneManager.LoadScene(1);
-            }
-
+            Invoke("nextLevel", 5f);
         }
+        if (sickCharacters.Count + unMaskedCharacters.Count + imposterCharacters.Count > loseNumber)
+        {
+            Invoke("reloadLevel", 5f);
+        }
+    }
+    void nextLevel()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextSceneIndex = currentSceneIndex + 1;
+        if (nextSceneIndex == SceneManager.sceneCountInBuildSettings)
+        {
+            nextSceneIndex = 0;
+        }
+        SceneManager.LoadScene(nextSceneIndex);
+
+    }
+    void reloadLevel()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
+
     }
 
     //o => o.tag == "UnMasked"

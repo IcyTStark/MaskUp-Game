@@ -634,7 +634,7 @@ GameObject:
   - component: {fileID: -4988637777871432097}
   - component: {fileID: 6995454001967772766}
   - component: {fileID: 828862433}
-  - component: {fileID: 8990920031030253441}
+  - component: {fileID: 895174724767130127}
   m_Layer: 0
   m_Name: DecentUnMasked
   m_TagString: UnMasked
@@ -742,13 +742,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mask: {fileID: 6578710016488622737}
   imposterMask: {fileID: 3868364169861776533}
-  cleanCharacter: {fileID: 3362696500563485746, guid: 8b12a791a3033c6428334dd3b2158c3c, type: 3}
-  sickCharacter: {fileID: 34666615409016542, guid: 8e80f868a5c5c154c8c845cfd9650f6c, type: 3}
   SickBubble: {fileID: 1951895828570962004, guid: 955f37ce11bbd434d9c43a56d4271c10, type: 3}
-  HealthyBubble: {fileID: 7772198664560703377, guid: 47dddb463b8533943aa6ec33db2246f9, type: 3}
   ImposterBubble: {fileID: 2079064804687608352, guid: 55e4b2cf077204f41a16d891841be841, type: 3}
   UnMaskedBubble: {fileID: 8968486020281357694, guid: f40f8ff70f0dad8419a7cdecf4e84493, type: 3}
---- !u!114 &8990920031030253441
+--- !u!114 &895174724767130127
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -757,14 +754,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3362696500563485746}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bf9d9583aed1224ea130143fce0ca47, type: 3}
+  m_Script: {fileID: 11500000, guid: 2a6f84c4e078bcd4cb7fa372badb66d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   goalLocations: []
   affector: {fileID: 1719701259625277143, guid: 5ae7628db46d20c408296ccea5038d84, type: 3}
-  goalName: UnMaskedGoal
-  waitTime: 0
-  WaitingTime: 0
   startWaitTime: 4
   timeItLasts: 4
 --- !u!1 &3530446284189560462
