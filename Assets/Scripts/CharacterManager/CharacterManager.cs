@@ -49,13 +49,13 @@ public class CharacterManager : MonoBehaviour
 
     void Update()
     {
-        //foreach (GameObject gO in characters)
-        //{
-        //    if (!characters.Any(gO => gO.tag == "UnMasked") && !characters.Any(gO => gO.tag == "Imposter") && !characters.Any(gO => gO.tag == "Sick"))
-        //    {
-        //        Invoke("nextLevel", 5f);
-        //    }
-        //}
+        foreach (GameObject gO in characters)
+        {
+            if (!characters.Any(gO => gO.tag == "UnMasked") && !characters.Any(gO => gO.tag == "Imposter") && !characters.Any(gO => gO.tag == "Sick"))
+            {
+                Invoke("nextLevel", 5f);
+            }
+        }
         if (maskedCharacters.Count == characters.Count)
         {
             Invoke("nextLevel", 5f);
@@ -80,7 +80,6 @@ public class CharacterManager : MonoBehaviour
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
-
     }
 
     //o => o.tag == "UnMasked"
