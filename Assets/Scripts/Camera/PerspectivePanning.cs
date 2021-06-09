@@ -19,6 +19,7 @@ public class PerspectivePanning : MonoBehaviour
         {
             Vector3 direction = touchStart - GetWorldPosition(groundZ);
             direction.y = 0;
+            Mathf.Clamp(direction.y, 0, 0);
             cam.transform.position += direction;
             Vector3 clampPos = cam.transform.position;
             cam.transform.position = new Vector3(Mathf.Clamp(clampPos.x, -10f, 10f), clampPos.y, clampPos.z);
@@ -27,6 +28,8 @@ public class PerspectivePanning : MonoBehaviour
             
         }
     }
+    
+    
     private Vector3 GetWorldPosition(float z)
     {
         Ray mousePos = cam.ScreenPointToRay(Input.mousePosition);
